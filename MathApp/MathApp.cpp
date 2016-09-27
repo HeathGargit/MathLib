@@ -22,9 +22,9 @@ int main()
 	//testIsBitSet();
 	//testGetRightMostSetBit();
 	//testPrintVoid();
-	//std::cout << multiply(354, 521) << std::endl;
+	std::cout << multiply(354, 0) << std::endl;
 	//std::cout << divide(46996668, 8199) << std::endl;
-	testIsPowerOfTwo();
+	//testIsPowerOfTwo();
 
 	system("pause");
 
