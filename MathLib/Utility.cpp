@@ -15,18 +15,15 @@ int multiply(unsigned int a, unsigned int b)
 	//int to track the total
 	unsigned int total = 0;
 
-	if (timesToIterate > -1)
+	//iterates through each bit in "b" and if it is a 1, adds extra zeros depending on position, then adds to the total
+	for (int i = 0; i < timesToIterate; i++)
 	{
-		//iterates through each bit in "b" and if it is a 1, adds extra zeros depending on position, then adds to the total
-		for (int i = 0; i <= timesToIterate; i++)
+		if (isRightMostBitSet(b >> i))
 		{
-			if (isRightMostBitSet(b >> i))
-			{
-
 				total += (a << i); //adds a 0 for each base unit checked.
-			}
 		}
 	}
+
 	
 	return total;
 }
@@ -136,7 +133,7 @@ int GetLeftMostSetBit(unsigned int value)
 		}
 	}
 
-	return -1;
+	return 0;
 }
 
 //this function prints the value of the unsigned int to the console.
