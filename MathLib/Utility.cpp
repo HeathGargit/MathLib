@@ -10,7 +10,7 @@ int add(int a, int b)
 int multiply(unsigned int a, unsigned int b)
 {
 	//figure out how many times to run the loop, based on the leftmost set bit, as any more times than this is just multiplying by zero a heap of times up to 32.
-	unsigned int timesToIterate = GetLeftMostSetBit(b);
+	int timesToIterate = GetLeftMostSetBit(b);
 
 	//int to track the total
 	unsigned int total = 0;
