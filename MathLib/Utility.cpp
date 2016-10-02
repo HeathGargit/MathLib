@@ -182,3 +182,15 @@ bool isPowerOfTwo(unsigned int value)
 
 	return false;
 }
+
+//converts degrees to radians
+float degToRad(float degrees)
+{
+	return degrees * _PI_OVER_180;
+}
+
+//converts radians to degrees
+float radToDeg(float radians)
+{
+	return radians * _180_OVER_PI;
+}
