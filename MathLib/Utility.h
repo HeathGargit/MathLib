@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _UTILITY_H_
+#define _UTILITY_H_
 
 #define _PI 3.14159265358979323846
 #define _PI_OVER_180 0.01745329   //1 radian
@@ -27,3 +28,5 @@ bool isPowerOfTwo(unsigned int value);
 float degToRad(float degrees);
 
 float radToDeg(float radians);
+
+#endif

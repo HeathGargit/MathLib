@@ -3,8 +3,8 @@
 
 #include "stdafx.h"
 #include "Utility.h"
-
 #include <iostream>
+#include <Vector2.h>
 
 void testLMBSet();
 void testAdd();
@@ -22,9 +22,16 @@ int main()
 	//testIsBitSet();
 	//testGetRightMostSetBit();
 	//testPrintVoid();
-	std::cout << multiply(1, 0) << std::endl;
+	//std::cout << multiply(1, 0) << std::endl;
 	//std::cout << divide(46996668, 8199) << std::endl;
 	//testIsPowerOfTwo();
+
+	Vector2 a(1, 2), b(2, 2), c;
+
+	c = a + b;
+
+	std::cout << "c= " << c.x << ", " << c.y << ". Magnitude is: " << c.magnitude() << std::endl;
+
 
 	system("pause");
 
